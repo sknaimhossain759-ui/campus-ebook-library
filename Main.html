@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus E-Book Library - Minor Project</title>
+    <link rel="stylesheet" href="Main.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <h1>📚 Campus E-Book Library</h1>
+            <p>Digital Learning Resource Portal | Minor Project Presentation</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Search & Filter Controls -->
+        <section class="controls-section">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search books by title, author, or subject..." onkeyup="searchBooks()">
+                <button onclick="searchBooks()">Search</button>
+            </div>
+            <div class="filter-tags">
+                <button class="tag active" onclick="filterCategory('All')">All Books</button>
+                <button class="tag" onclick="filterCategory('Computer Science')">Computer Science</button>
+                <button class="tag" onclick="filterCategory('Mathematics')">Mathematics</button>
+                <button class="tag" onclick="filterCategory('Physics')">Physics</button>
+            </div>
+        </section>
+
+        <!-- Book Display Grid -->
+        <section class="library-section">
+            <div class="book-grid" id="bookGrid">
+                <!-- JavaScript will populate books here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Digital E-Book Library | Minor Project Submission</p>
+            <p class="team-credit">Developed by: Group Member 1, 2, 3, 4 & 5</p>
+        </div>
+    </footer>
+
+    <script src="Main.js"></script>
+</body>
+</html>
